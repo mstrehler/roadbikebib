@@ -1,0 +1,274 @@
+% Literatur für Trainingslager
+% 
+% Folding in diesem File
+% Die Datei enthält ganz am Schluss eine Modline, die die foldmethod setzt
+% (=marker). Die gefoldeten Anteile müssen in dreifache geschweifte Klammern
+% gesetzt werden {{{ }}}, Zeichen zum Auskommentieren sind dabei egal. Mit zo
+% wird der Fold geöffnet, mit zc geschlossen. zM schliesst alle Folds, egal
+% wo der Cursor ist, zR öffnet alle.
+
+% String-Definitionen {{{
+
+@STRING(TO = "Tour")
+@STRING(RB = "{R}oad{B}ike")
+@STRING(GCN = "{Global Cycling Network}")
+
+% Die folgenden Strings sind Uebersetzung der englischen Ausdrücke zur
+% Identifikation der Referenz. Siehe dazu APA Syle Guide Electronic Reference,
+% Pos. 205. Sie müssen mit dem Tag 'type' eingebunden werden. Sie erscheinen
+% dann mit apacite wie vorgegebn in eckigen Klammern.
+@STRING(audio = "Audio-Datei")
+@STRING(blog    = "Blog-Eintrag")
+@STRING(facebook = "Facebook-Eintrag")
+@STRING(mp3 = "MP3-Datei")
+@STRING(podcast = "Podcast-Transkript")
+@STRING(tweet = "Tweet")
+@STRING(video = "Video-Datei")
+
+% }}}
+% {{{ YouTube-Videos
+
+% You-Tube Video
+@misc{gcn2011winter,
+    author =    GCN,
+    title = {{Top 10 Tips For Cycling In Winter - Matt Stephens' Pro Tips For Winter Riding}},
+    type =      video,
+    year =      2011,
+    month =     {\APACmonth{11}},
+    day =       {14},
+    url =       {https://youtu.be/097kJPd-0q8},
+    lastchecked =      {10.12.2015},
+    otherinfo = {bidon repar kit, warm toes (tin foil), spare layers, stand-by light,
+            two tubes, tyre selection, fuel, clean your bike, keep warm (keep moving),
+            protect your smartphone},
+}
+
+% You-Tube Video
+@misc{gcn2015winter,
+    author =    GCN,
+    title =     {{Top 5 Ways To Ride Through Winter – How To Enjoy Cycling Through Winter}},
+    type =      video,
+    year =      2015,
+    month =     {\APACmonth{11}},
+    day =       {26},
+    url =       {https://youtu.be/_5JFPi1c5i4},
+    lastchecked =      {10.12.2015},
+    otherinfo = {ride harder if you feel cold, stick to flat roads -- avoid long climbs,
+            riding shorter circuits close to home (10-20km), wear the right clothing,
+            buy a cyclo-cross bike, ride indoors}
+}
+
+% You-Tube Video
+@misc{gcn2015wintermistakes,
+    author =    GCN,
+    title =     {{How To Avoid Common Winter Cycling Mistakes}},
+    type =      video,
+    year =      2015,
+    month =     {\APACmonth{11}},
+    day =       {11},
+    url =  {https://youtu.be/xSOUpLl9Q2g}
+    lastchecked =      {10.12.2015},
+    otherinfo = {don't use your best bike, not washing your bike,  forgetting light,
+           no mudguards, not enough kit (multiple thinner layers), not checking your tyres,
+          no overshoes,  the wrong tires, drop tyre pressure by 10-15 PSI (0.69-1 bar),
+          not enough tools and spares}
+}
+
+% }}}
+% Blog-Einträge {{{
+
+@misc{Reisberg2014,
+    author =    {Lars Reisberg},
+    title =     {5 {T}rainings-{T}ipps f{\"u}r die {L}angstrecke auf dem {R}ennrad: {E}ine etwas andere {S}ternfahrt},
+    journal =   {Lousy Legs},
+    type =      blog,
+    number =    {01.06.2014},
+    year =      2014,
+    url = {http://cervelover.blogspot.ch/2014/06/5-trainings-tipps-fur-die-langstrecke.html},
+    lastchecked = {10.01.2016},
+}
+
+% Blog-Eintrag
+@misc{Friedrich2008trainingslager,
+    author =    {Friedrich, Christian},
+    title =     {{D}as {T}rainingslager: {S}inn, {Z}weck und {U}msetzung},
+    journal =   {triatlon.de},
+    type =      blog,
+    number =    {19.01.2008},
+    year =      2008,
+    url = {http://www.triathlon.de/trainingslager-sinn-zweck-und-umsetzung-1.html},
+    lastchecked = {10.01.2016},
+}
+
+% }}}
+% Artikel {{{
+
+@article{Beck2011,
+    author =    {Beck, Daniel},
+    title =     {{F}einschliff f{\"u}rs {R}ennen -- {V}oll am {L}imit},
+    year =      2011,
+    journal =   RB,
+    pages =     {106--109},
+    number =    {6},
+}
+
+@article{Flieshardt2012radfahrerregeln,
+    author =    {Flieshardt, Nils},
+    title =     {{R}egeln f{\"u}r {R}ad- und {A}utofahrer},
+    year =      2015,
+    journal =   RB,
+    pages =     {61--66},
+    number =    {7},
+}
+@ARTICLE{Beck2016trainingslagersuenden,
+  author = {Beck, Daniel},
+  title = {{D}ie 5 gr{\"o}ssten {T}rainingslagers{\"u}nden},
+  journal = RB,
+  year = {2016},
+  number = {01/16},
+  pages = {68--71},
+  otherinfo = {}
+}
+
+
+@ARTICLE{Boehme2016trainingstag,
+  author = {B{\"o}hme, Tim},
+  title = {{D}er perfekte {T}rainingstag},
+  journal = RB,
+  year = {2016},
+  number = {01/16},
+  pages = {70--71},
+  otherinfo = {}
+}
+
+@ARTICLE{Beck2015,
+        author = {Beck, Daniel},
+        title = {{D}as perfekte {T}rainingslager -- {B}asis {C}amp},
+        journal = RB,
+        year =  2015,
+        pages = {50--53},
+        number = {1/15},
+        otherinfo = {}
+} 
+
+@ARTICLE{Beck2015frostschutz,
+        author = {Beck, Daniel},
+        title = {{F}rostschutz -- {R}ennrad fahren im {W}inter},
+        journal = RB,
+        year =  2015,
+        pages = {90--91},
+        number = {1/15},
+        otherinfo = {}
+}
+
+@ARTICLE{Brunker2015rollentrainer,
+        author = {Brunker, Christian},
+        title = {{W}egbereiter -- {R}ollentrainer-{K}aufberatung},
+        journal = RB,
+        year = {2015},
+        pages = {42--49},
+        number = {1/15},
+        otherinfo = {}
+}
+
+@ARTICLE{Brunker2015radkoffer,
+        author = {Brunker, Christian},
+        title = {{S}chatztruhen -- {R}adkoffer und -taschen im {T}est},
+        journal = RB,
+        year = {2015},
+        pages = {36--44},
+        number = {3/15},
+        otherinfo = {}
+}
+
+@article{nieman1999exercise,
+  title={Exercise and immune function},
+  author={Nieman, David C and Pedersen, Bente K},
+  journal={Sports Medicine},
+  volume={27},
+  number={2},
+  pages={73--80},
+  year={1999},
+  publisher={Springer}
+}
+
+@ARTICLE{Lehner2015,
+        author = {Lehner, Laurin},
+        title = {5 {M}oves, die {M}arathon-{R}acer schneller machen},
+        journal = {Bike -- das Mountainbike-Magazin},
+        year = {2015},
+        volume = {},
+        number = {10/15},
+        pages = {76--79},
+        month = {oct},
+        otherinfo = {}
+}
+% }}}
+% Webseiten {{{
+
+@MISC{rtl2015klima,
+        author = {{RTL interactive GmbH}},
+        title = {wetter.de},
+        year = 2015,
+        url = {http://www.wetter.de/cms/klima.html},
+        lastchecked =  {11.12.2015},
+        otherinfo = {}
+}
+
+@MISC{swiss2016fahrradmitnahme,
+        author = {{Swiss International Air Lines}},
+        title={Spezial- und {S}portgep{\"a}ck},
+        year =2016,
+        url = {https://www.swiss.com/ch/de/vorbereiten/gepaeck/spezialgepaeck},
+        lastchecked = {07.01.2015},
+
+}
+
+% }}}
+% Bücher {{{
+        
+@incollection{Gabriel2004,
+  title={{S}port und {I}mmunsystem},
+  author={Gabriel, Holger},
+  booktitle={{K}ompendium der {S}portmedizin},
+  pages={227--250},
+  year={2004},
+  publisher={Springer}
+}
+
+@BOOK{Thomas2009rennradbuch,
+        author = {Steve Thomas and Ben Searle and Dave Smith},
+        editor = {},
+        title = {{D}as grosse {R}ennradbuch -- {T}raining, {T}echnik, {T}aktik},
+        publisher = {Delius Klasing},
+        year = {2009},
+        edition = {4},
+        otherinfo = {}
+}
+@BOOK{Konopka2006radsport,
+        author = {Konopka, Peter},
+        title = {Radsport: der {R}atgeber f{\"u}r {A}usr{\"u}stung, {T}echnik, {T}raining, {E}rn{\"a}hrung, {W}ettkampf und {M}edizin} ,
+        publisher = {BLV Buchverlag},
+        year = {2006},
+        edition = {9},
+}
+
+@BOOK{Boehme2014rennradtraining,
+        author = {Tim B{\"o}hme and Jochen Haar},
+        title = {{R}ennrad-{T}raining},
+        publisher = {Bruckmann},
+        year = {2014},
+        edition = {1},
+}
+@BOOK{Weineck2010,
+        author =    {Weineck, J{\"u}rgen},
+        title =     {Sportbiologie},
+        year =      2010,
+        edition =   {10}
+        publisher = {Spitta Verlag},
+        ISBN =      {978-3-938509-25-8},
+}
+% }}}
+
+% Modline
+% vim:foldmethod=marker:foldlevel=0
