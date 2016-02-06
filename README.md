@@ -2,14 +2,17 @@
 
 Literatur-Referenz für Rennrad im BibTex-Format.
 
-# Änderungen in der `roadbike.bib` übernehmen
+# Änderungen in `roadbikebib` übernehmen
+
+Ausgehend vom Projektverzeichnis, muss man im Submodul-Verzeichnis zuerst ein pull machen.
+Danach im Projektverzeichnis die Änderungen stagen und commiten.
 
 ```bash
-cd <submodule>
+cd roadbikebib
 git checkout master
 git pull
 cd ..
-git add <submodule>
-git commit -m "Update submodule"
+git add roadbikebib
+git commit -m "Update vom roadbikebib-Submodule"
 ```
 
