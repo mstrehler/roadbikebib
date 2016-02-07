@@ -1,0 +1,27 @@
+% Datei: bibtest.tex
+% Begonnen: 07.02.2016 
+% Letzte Änderung: 07.02.2016 
+
+\documentclass[a4paper,parskip=half,draft=true]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{apacite}
+
+\usepackage{lmodern}    % Schrift "Latin Modern"
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+
+\begin{document}
+
+\section*{Inhalt \texttt{roadbike.bib}}
+
+\nocite{*}
+
+\bibliographystyle{apacite}
+\bibliography{roadbike.bib}
+
+\end{document}
+
