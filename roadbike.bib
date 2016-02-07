@@ -1,9 +1,4 @@
-% Literatur für Rennrad
-% git-submodul anfügen:
-% git subomdule add https://github.com/mstrehler/roadbikebib.git
-% 
-% Um ein einem Projekt das submodul zu aktualisieren:
-% git submodule update
+% Literaturverzeichnis für Rennrad
 % 
 % Folding in diesem File
 % Die Datei enthält ganz am Schluss eine Modline, die die foldmethod setzt
@@ -12,11 +7,17 @@
 % wird der Fold geöffnet, mit zc geschlossen. zM schliesst alle Folds, egal
 % wo der Cursor ist, zR öffnet alle.
 
-% String-Definitionen {{{
+% STRING-Definitionen {{{
+
+% STRING-Def: Zeitschriften-Titel, Herausgeber {{{
 
 @STRING(TO = "Tour")
 @STRING(RB = "{R}oad{B}ike")
 @STRING(GCN = "{Global Cycling Network}")
+@STRING(CYCLIST = "{C}yclist")
+
+% }}} STRING-Def: Zeitschriften-Titel
+% STRING-Def: Medien-Typ {{{
 
 % Die folgenden Strings sind Uebersetzung der englischen Ausdrücke zur
 % Identifikation der Referenz. Siehe dazu APA Syle Guide Electronic Reference,
@@ -24,13 +25,19 @@
 % dann mit apacite wie vorgegebn in eckigen Klammern.
 @STRING(audio = "Audio-Datei")
 @STRING(blog    = "Blog-Eintrag")
+@STRING(brochure = "Brosch{\"u}re")
+@STRING(dbrecord = "Datenbank-Eintrag")
+@STRING(lecturenotes = "Vorlesungsnotizen")
+@STRING(app = "Mobile Applikation")
+@STRING(photo = "Fotografie")
+@STRING(powerpoint = "PowerPoint-Pr{\"a}sentation")
 @STRING(facebook = "Facebook-Eintrag")
 @STRING(mp3 = "MP3-Datei")
 @STRING(podcast = "Podcast-Transkript")
 @STRING(tweet = "Tweet")
 @STRING(video = "Video-Datei")
-
-% }}}
+%   }}} STRING-Def: Medien-Typ
+% }}} STRING-Definitionen
 % {{{ YouTube-Videos
 
 % You-Tube Video
@@ -210,15 +217,6 @@
 }
 % }}}
 % Webseiten {{{
-
-@MISC{Limacher2015ferienregelung,
-        author = {Gitta Limacher},
-        title = {{F}erienbezug {I}hre {R}echte und {P}flichten},
-        year = 2015,
-        url = {http://www.beobachter.ch/arbeit-bildung/arbeitsrecht/artikel/ferienbezug_ihre-rechte-und-pflichten/},
-        lastchecked = {06.02.2016},
-        otherinfo = {Gesetzliche Bestimmungen Ferienregelung Schweiz}
-}
 
 @MISC{rtl2015klima,
         author = {{RTL interactive GmbH}},
