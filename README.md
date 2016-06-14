@@ -17,7 +17,15 @@ Dateien
 ```bash
 git submdule add https://github.com/mstrehler/roadbikebib.git
 ```
-Damit wird im lokalen Projektordner ein Unterverzeichnis `roadbikebib` erzeugt.
+Damit wird im lokalen Projektordner ein Unterverzeichnis `roadbikebib` und die Datei `.gitmodules` erzeugt.
+Auch wenn `roadbikebib` ein Unterverzeichnis im Arbeitsverzeichnis ist, sieht Git es als Submodul
+und verfolgt ("trackt") den Inhalt nicht.
+
+Zum Anfügen des Submoduls wird ein separater Commit erzeugt (ProGit Manual p. 343):
+
+```bash
+git commit -am 'Add roadbikebib modul'
+```
 
 ### Änderungen der `roadbike.bib` in Datei übernehmen
 Wenn in der `roadbike.bib` zentrale Änderungen gemacht wurden können so die Änderungen in das Projekt übernommen werden.
