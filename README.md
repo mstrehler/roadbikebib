@@ -5,7 +5,7 @@
 Literatur-Referenz für Rennrad im BibTex-Format.
 
 Dateien
-* roadbike.bib: Das Literaturverzeichnis im BibTeX-Format
+* `roadbike.bib`: Das Literaturverzeichnis im BibTeX-Format
 * bibtest.tex: LaTeX-File zum Erzeugen des gesamten, formatierten Inhaltes von `roadbike.bib`
 * bibtest.pdf: Verzeichnis als PDF
 * README.md: diese Datei
@@ -15,7 +15,7 @@ Dateien
 ### Das Verzeichnis als git-submodul anfügen:
 
 ```bash
-git subomdule add https://github.com/mstrehler/roadbikebib.git
+git submdule add https://github.com/mstrehler/roadbikebib.git
 ```
 Damit wird im lokalen Projektordner ein Unterverzeichnis `roadbikebib` erzeugt.
 
@@ -30,4 +30,3 @@ cd ..
 git add roadbikebib
 git commit -m "Update des Submodules roadbikebib"
 ```
-
