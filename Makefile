@@ -77,12 +77,6 @@ clean:
 distclean: clean
 	$(RM) *.pdf *.dvi
 
-# Updates the timestamp of the source files (LaTeX and bib files). For testing
-# purposes only. This is an other way to force a compile run. I've build this
-# (my first phony target!) before I heard of the -W or --what-if flag of make.
-touch:
-	touch *.tex *.bib
-
 # Make folders
 init: $(DIRS) $(DIRSNB)
 
@@ -91,11 +85,10 @@ $(DIRS) $(DIRSNB):
 
 help:
 	@$(ECHO) Type "'make help'         to see this list"
-	@$(ECHO) Type "'make init'         to make (initialize) the folders $(DIRS)"
-	@$(ECHO) Type "'make distclean'    to remove ALL generated files"
+	@$(ECHO) Type "'make init'         to make (initialize) the folders $(DIRS) $(DIRSNB)"
 	@$(ECHO) Type "'make clean'        to remove generated auxilliary files"
-	@$(ECHO) Type "'make touch'        to update timestamp of source files (tex, bib)"
+	@$(ECHO) Type "'make distclean'    to remove ALL generated files"
 	@$(ECHO) Type "'make -W $(MAIN).tex'  to force a compile run"
 
 # Übliche Pseudoziele gemäss "make ge-packt", S. 159.
-.PHONY: all clean distclean touch init dist help
+.PHONY: all clean distclean init dist help
