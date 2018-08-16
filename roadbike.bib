@@ -19,6 +19,8 @@
 @STRING(pub-wiki = "{W}ikipedia")
 @STRING(pub-nyt = "{NYT}imes.com")
 @STRING(pub-spiegelonline = "{SPIEGEL}.{O}nline")
+@STRING(pub-nzz = "{N}eue {Z}{\"u}rcher {Z}eitung")
+@STRING(pub-tagi = "{T}ages-{A}nzeiger")
 
 % }}} STRING-Def: Zeitschriften-Titel
 % STRING-Def: Medien-Typ {{{
@@ -157,6 +159,33 @@
 % }}}
 % Blog-Einträge {{{
 
+% Blog-Eintrag (oder Artikel?)
+@misc{Beyer2017wintertipps,
+    author =        {Jessica Beyer},
+    title =         {{R}adfahren im {W}inter - so kommst du durch die kalte {J}ahreszeit},
+    journal =       {roadcycling.de},
+    type =          blog,
+    year =          2017,
+    month =         {\APACmonth{12}},
+    day =           {17},
+    url =           {https://roadcycling.de/ratgeber/radfahren-im-winter-tipps},
+    lastchecked =   {16.08.2018},
+    otherinfo =     {Wettervorhersage checken; Anziehen: Kombination, Ausprobieren; Strecke anpassen;
+                    Länge der Ausfahrt anpassen; Zeitpunkt der Ausfahrt anpassen},
+}
+
+@misc{Scott2017klettertipps,
+    author =        {George Scott},
+    title =         {6 {P}rofi-{K}letterer-{T}ipps von {G}eraint {T}homas},
+    journal =       {roadcycling.de},
+    type =          blog,
+    year =          2014,
+    month =         {\APACmonth{09}},
+    day =           {22},
+    url =           {https://roadcycling.de/ratgeber/fahrtechnik/profi-kletter-tipps-geraint-thomas},
+    lastchecked =   {16.08.2018},
+}
+
 @misc{Reisberg2014,
     author =    {Lars Reisberg},
     title =     {5 {T}rainings-{T}ipps f{\"u}r die {L}angstrecke auf dem {R}ennrad: {E}ine etwas andere {S}ternfahrt},
@@ -183,6 +212,17 @@
 % }}}
 % Artikel {{{
 
+@ARTICLE{Neff2018ullrichabsturz,
+    author =    {Benedict Neff},
+    title =     {{J}an {U}llrich -- ein {A}bsturz wie im {L}ive-{T}icker},
+    journal =   pub-nzz,
+    year =      {2018},
+    pages =     {22},
+    month =     {\APACmonth{8}},
+    day =       {16},
+    otherinfo = {Beschreibt den Absturz von Jan Ullrich.}
+}
+
 @article{Beck2011,
     author =    {Beck, Daniel},
     title =     {{F}einschliff f{\"u}rs {R}ennen -- {V}oll am {L}imit},
@@ -200,6 +240,7 @@
     pages =     {61--66},
     number =    {7},
 }
+
 @ARTICLE{Beck2016trainingslagersuenden,
   author = {Beck, Daniel},
   title = {{D}ie 5 gr{\"o}ssten {T}rainingslagers{\"u}nden},
@@ -209,7 +250,6 @@
   pages = {68--71},
   otherinfo = {}
 }
-
 
 @ARTICLE{Boehme2016trainingstag,
   author = {B{\"o}hme, Tim},
@@ -285,7 +325,7 @@
 }
 
 @MISC{spiegel2017pendeln,
-        author = {},
+        author = {dpa},
         title = {{W}eg zur {A}rbeit -- {Z}wei von drei {P}endlern nehmen das {A}uto},
         journal = pub-spiegelonline,
         year = 2017,
